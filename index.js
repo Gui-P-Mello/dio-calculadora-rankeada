@@ -3,13 +3,18 @@ let contagemVitorias = 0
 let contagemDerrotas = 0
 let nivel
 let saldo
-partidas.forEach(partida => {
-    if(partida === "v"){
-        contagemVitorias += 12
-    }
-})
 
-contagemDerrotas = (partidas.length * 12) - contagemVitorias
+function calculaVitorias (){
+    partidas.forEach(partida => {
+        if(partida === "v"){
+            contagemVitorias += 12
+        }
+    })
+}
+
+function calculaDerrotas(){
+    contagemDerrotas = (partidas.length * 12) - contagemVitorias
+}
 
 function calculaRank(vitorias, derrotas){
 
@@ -43,6 +48,9 @@ function calculaRank(vitorias, derrotas){
     
     return nivel
 }
+
+calculaVitorias ()
+calculaDerrotas()
 
 nivel = calculaRank(contagemVitorias, contagemDerrotas)
 

@@ -38,7 +38,7 @@ function calculaRank(vitorias, derrotas){
         nivel = "Imortal"
     }
 
-//Eu sei que há números no intervalo de 0 a 100 que que podem gerar erros aqui por não estar verificando com <= na maioria das condicionais, 
+//Eu sei que há números no intervalo de 0 a 100 que podem gerar erros aqui por não estar verificando com <= na maioria das condicionais, 
 //mas estou seguindo à risca a lógica expressa no enunciado
 //Acredito que seja erro de lógica no enunciado, mas vou o seguir a risca.
 //Uma última nota, acho os exercícios de desafios até aqui ambíguos, confusos, mal esclarecidos e pouco proveitosos. 
